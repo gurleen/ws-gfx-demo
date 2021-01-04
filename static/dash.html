@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DTV Graphics Dash</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+    <script src="ws.js"></script>
+</head>
+
+
+<body>
+
+    <div x-data="{boxTitle: ''}" class="main">
+        <input x-model="boxTitle" type="text">
+        <button @click="sendData('boxTitle', boxTitle)">Send</button>
+    </div>
+
+</body>
+</html>
